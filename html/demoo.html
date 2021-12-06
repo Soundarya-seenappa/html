@@ -1,0 +1,80 @@
+<html>
+<head>
+<title>demoo</title>
+</head>
+
+<script>
+//check even or odd
+	/*function check(){
+		var x =Number(prompt('enter the num'));
+		if(x%2 == 0)
+		{
+		console.log('even');
+		}
+		else
+		{
+		console.log('odd');
+		}
+		}*/
+//check true r false
+	/*function trf()
+	{
+	var x=10
+	console.log(x==10)
+	console.log(x==9)
+	}*/
+	
+//printing using while loop
+  /*function print(){
+  var i=1
+  while(i<10)
+  {
+  console.log(i);
+  i++
+  }
+  }*/
+  function arr(){
+  var numArr= [50, 35, 67, 99, 87, 45, 23, 72];
+     console.log(numArr);
+
+     numArr.push(13); // it will add 13 in last position
+      console.log(numArr);
+
+    var x=  numArr.pop(); // it will remove last element and return it
+      console.log(numArr);
+      console.log("returned "+ x);
+      console.log("==============================================");
+
+       numArr.unshift(13); // it will add 13 in first position
+      console.log(numArr);
+
+    var y=  numArr.shift(); // it will remove first element and return it
+      console.log(numArr);
+      console.log("returned "+ y);
+
+       console.log("==============================================");
+
+    var index =   numArr.indexOf(98);
+    if(index >= 0){
+     console.log("found at "+ index);
+    }
+    else
+    {
+    console.log("Not found "+ index);
+    }
+    console.log("==============================================");
+
+    var subArr= numArr.slice(1,5); // it will return an array from index 1 to (5-1)
+     console.log("Sub Array is "+ subArr);
+
+     var cloneArr= numArr.slice(); // it wll reurn duplicate copy
+     console.log("Clone Array is "+ cloneArr);
+	}
+</script>
+
+<body>
+	<input type="button" value="Click me" onclick="arr()">
+</body>
+
+
+</html>
